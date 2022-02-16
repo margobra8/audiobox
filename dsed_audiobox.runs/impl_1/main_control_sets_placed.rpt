@@ -1,0 +1,79 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Mon Jan 31 02:46:03 2022
+| Host         : DESKTOP-1AJ0FVF running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    42 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              14 |           11 |
+| No           | No                    | Yes                    |             101 |           32 |
+| No           | Yes                   | No                     |              24 |            8 |
+| Yes          | No                    | No                     |               2 |            1 |
+| Yes          | No                    | Yes                    |             177 |           64 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------+------------------------------+------------------+------------------+----------------+
+|      Clock Signal      |         Enable Signal        | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------------+------------------------------+------------------+------------------+----------------+
+|  mclkdiv/inst/clk_out1 | maif/vol/last_btnu_i_1_n_0   |                  |                1 |              2 |
+|  mclkdiv/inst/clk_out1 | maif/vol/lvl_reg[4]_i_1_n_0  | reset_IBUF       |                2 |              5 |
+|  mclkdiv/inst/clk_out1 | mfir/cfir/E[0]               | reset_IBUF       |                3 |              8 |
+|  mclkdiv/inst/clk_out1 | maif/mic/E[0]                | reset_IBUF       |                2 |              8 |
+|  mclkdiv/inst/clk_out1 | maif/mic/d1_reg_0            | reset_IBUF       |                2 |              8 |
+|  mclkdiv/inst/clk_out1 | maif/mic/d2_reg[7]_i_1_n_0   | reset_IBUF       |                3 |              8 |
+|  mclkdiv/inst/clk_out1 | mfsmd/count_reg_reg[8][0]    | reset_IBUF       |                3 |              9 |
+|  mclkdiv/inst/clk_out1 |                              |                  |               11 |             14 |
+|  mclkdiv/inst/clk_out1 | mfsmd/addr_d_reg[18]_i_1_n_0 | reset_IBUF       |                8 |             19 |
+|  mclkdiv/inst/clk_out1 | mfsmd/addr_u_reg[18]_i_1_n_0 | reset_IBUF       |                9 |             19 |
+|  mclkdiv/inst/clk_out1 | maif/mic/p_reg_reg[18]_0[0]  | reset_IBUF       |               10 |             19 |
+|  mclkdiv/inst/clk_out1 | maif/en4/E[0]                | reset_IBUF       |                8 |             34 |
+|  mclkdiv/inst/clk_out1 | mfsmd/ax0_reg[7][0]          | reset_IBUF       |               14 |             40 |
+|  mclkdiv/inst/clk_out1 |                              | reset_IBUF       |               40 |            125 |
++------------------------+------------------------------+------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 5      |                     1 |
+| 8      |                     4 |
+| 9      |                     1 |
+| 14     |                     1 |
+| 16+    |                     6 |
++--------+-----------------------+
+
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ram_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ram_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1900000001fs"></ZoomEndTime>
+      <Cursor1Time time="1252500000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="92"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/ram_tb/clka" type="logic">
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ram_tb/ena" type="logic">
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ram_tb/wea" type="array">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ram_tb/addra" type="array">
+      <obj_property name="ElementShortName">addra[18:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[18:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ram_tb/dina" type="array">
+      <obj_property name="ElementShortName">dina[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ram_tb/douta" type="array">
+      <obj_property name="ElementShortName">douta[7:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[7:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

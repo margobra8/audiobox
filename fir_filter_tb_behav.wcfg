@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fir_filter_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fir_filter_tb" />
+            <top_module name="package_dsed" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="15000000000fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="96"></NameColumnWidth>
+      <ValueColumnWidth column_width="71"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/fir_filter_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/sample_in" type="array">
+      <obj_property name="ElementShortName">sample_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_in[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">7</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/sample_in_enable" type="logic">
+      <obj_property name="ElementShortName">sample_in_enable</obj_property>
+      <obj_property name="ObjectShortName">sample_in_enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/filter_select" type="logic">
+      <obj_property name="ElementShortName">filter_select</obj_property>
+      <obj_property name="ObjectShortName">filter_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/sample_out" type="array">
+      <obj_property name="ElementShortName">sample_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sample_out[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">7</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#808000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/sample_out_ready" type="logic">
+      <obj_property name="ElementShortName">sample_out_ready</obj_property>
+      <obj_property name="ObjectShortName">sample_out_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/XFIR/dfir/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/XFIR/dfir/c0" type="array">
+      <obj_property name="ElementShortName">c0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c0[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">7</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/XFIR/dfir/c1" type="array">
+      <obj_property name="ElementShortName">c1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c1[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">7</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/XFIR/dfir/c2" type="array">
+      <obj_property name="ElementShortName">c2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c2[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">7</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/XFIR/dfir/c3" type="array">
+      <obj_property name="ElementShortName">c3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c3[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">7</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/XFIR/dfir/c4" type="array">
+      <obj_property name="ElementShortName">c4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c4[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">7</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/XFIR/dfir/x0" type="array">
+      <obj_property name="ElementShortName">x0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x0[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">7</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/XFIR/dfir/x1" type="array">
+      <obj_property name="ElementShortName">x1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x1[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">7</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/XFIR/dfir/x2" type="array">
+      <obj_property name="ElementShortName">x2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x2[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">7</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/XFIR/dfir/x3" type="array">
+      <obj_property name="ElementShortName">x3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x3[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">7</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/XFIR/dfir/x4" type="array">
+      <obj_property name="ElementShortName">x4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x4[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">7</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fir_filter_tb/XFIR/dfir/sum" type="array">
+      <obj_property name="ElementShortName">sum[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sum[7:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">7</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

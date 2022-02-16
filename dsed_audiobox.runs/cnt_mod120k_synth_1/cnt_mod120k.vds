@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Jan 29 18:54:59 2022
+# Process ID: 2816
+# Current directory: C:/home/archivos_dsed_lab/dsed_audiobox/dsed_audiobox.runs/cnt_mod120k_synth_1
+# Command line: vivado.exe -log cnt_mod120k.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cnt_mod120k.tcl
+# Log file: C:/home/archivos_dsed_lab/dsed_audiobox/dsed_audiobox.runs/cnt_mod120k_synth_1/cnt_mod120k.vds
+# Journal file: C:/home/archivos_dsed_lab/dsed_audiobox/dsed_audiobox.runs/cnt_mod120k_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cnt_mod120k.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 338.688 ; gain = 81.715
+INFO: [Synth 8-638] synthesizing module 'cnt_mod120k' [c:/home/archivos_dsed_lab/dsed_audiobox/dsed_audiobox.srcs/sources_1/ip/cnt_mod120k/synth/cnt_mod120k.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'cnt_mod120k' (7#1) [c:/home/archivos_dsed_lab/dsed_audiobox/dsed_audiobox.srcs/sources_1/ip/cnt_mod120k/synth/cnt_mod120k.vhd:71]
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 389.348 ; gain = 132.375
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 389.348 ; gain = 132.375
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 604.512 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 604.512 ; gain = 347.539
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 604.512 ; gain = 347.539
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 604.512 ; gain = 347.539
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 604.512 ; gain = 347.539
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 604.512 ; gain = 347.539
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 682.043 ; gain = 425.070
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 682.043 ; gain = 425.070
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 693.188 ; gain = 436.215
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 693.188 ; gain = 436.215
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 693.188 ; gain = 436.215
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 693.188 ; gain = 436.215
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 693.188 ; gain = 436.215
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 693.188 ; gain = 436.215
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 693.188 ; gain = 436.215
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |     1|
+|2     |LUT1    |     2|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 693.188 ; gain = 436.215
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 693.188 ; gain = 436.844

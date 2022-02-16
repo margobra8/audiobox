@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="data_flux_fir_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="data_flux_fir_tb" />
+            <top_module name="package_dsed" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="2600000001fs"></ZoomEndTime>
+      <Cursor1Time time="995024000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="108"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/data_flux_fir_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_flux_fir_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_flux_fir_tb/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_flux_fir_tb/c0" type="array">
+      <obj_property name="ElementShortName">c0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c0[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_flux_fir_tb/c1" type="array">
+      <obj_property name="ElementShortName">c1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c1[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_flux_fir_tb/c2" type="array">
+      <obj_property name="ElementShortName">c2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c2[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_flux_fir_tb/c3" type="array">
+      <obj_property name="ElementShortName">c3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c3[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_flux_fir_tb/c4" type="array">
+      <obj_property name="ElementShortName">c4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">c4[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_flux_fir_tb/x0" type="array">
+      <obj_property name="ElementShortName">x0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x0[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_flux_fir_tb/x1" type="array">
+      <obj_property name="ElementShortName">x1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x1[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_flux_fir_tb/x2" type="array">
+      <obj_property name="ElementShortName">x2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x2[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_flux_fir_tb/x3" type="array">
+      <obj_property name="ElementShortName">x3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x3[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_flux_fir_tb/x4" type="array">
+      <obj_property name="ElementShortName">x4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x4[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/data_flux_fir_tb/o" type="array">
+      <obj_property name="ElementShortName">o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../dsed_audiobox.srcs/sources_1/imports/new/package_dsed.vhd"
+vhdl xil_defaultlib  "../../../dsed_audiobox.srcs/sources_1/new/ctrl_fir.vhd"
+vhdl xil_defaultlib  "../../../dsed_audiobox.srcs/sources_1/new/data_flux_fir.vhd"
+vhdl xil_defaultlib  "../../../dsed_audiobox.srcs/sources_1/new/fir_filter.vhd"
+vhdl xil_defaultlib  "../../../dsed_audiobox.srcs/sources_1/new/mux5.vhd"
+vhdl xil_defaultlib  "../../../dsed_audiobox.srcs/sources_1/new/mux7.vhd"
+vhdl xil_defaultlib  "../../../dsed_audiobox.srcs/sim_1/new/fir_filter_tb.vhd"
+
+# Do not sort compile order
+nosort

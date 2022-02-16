@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Jan 29 18:54:59 2022
+# Process ID: 2816
+# Current directory: C:/home/archivos_dsed_lab/dsed_audiobox/dsed_audiobox.runs/cnt_mod120k_synth_1
+# Command line: vivado.exe -log cnt_mod120k.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cnt_mod120k.tcl
+# Log file: C:/home/archivos_dsed_lab/dsed_audiobox/dsed_audiobox.runs/cnt_mod120k_synth_1/cnt_mod120k.vds
+# Journal file: C:/home/archivos_dsed_lab/dsed_audiobox/dsed_audiobox.runs/cnt_mod120k_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cnt_mod120k.tcl -notrace

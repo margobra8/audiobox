@@ -1,0 +1,304 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Mon Jan 31 02:46:41 2022
+| Host         : DESKTOP-1AJ0FVF running 64-bit major release  (build 9200)
+| Command      : report_drc -file main_drc_routed.rpt -pb main_drc_routed.pb -rpx main_drc_routed.rpx
+| Design       : main
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Routed
+------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 51
++-----------+----------+-----------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                     | Violations |
++-----------+----------+-----------------------------------------------------------------+------------+
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties             | 1          |
+| CHECK-3   | Warning  | Report rule limit reached                                       | 1          |
+| DPIP-1    | Warning  | Input pipelining                                                | 3          |
+| DPIR-1    | Warning  | Asynchronous driver check                                       | 21         |
+| REQP-1839 | Warning  | RAMB36 async control check                                      | 20         |
+| AVAL-5    | Advisory | enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 5          |
++-----------+----------+-----------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#9 Warning
+Asynchronous driver check  
+DSP mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#10 Warning
+Asynchronous driver check  
+DSP mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#11 Warning
+Asynchronous driver check  
+DSP mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#12 Warning
+Asynchronous driver check  
+DSP mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#13 Warning
+Asynchronous driver check  
+DSP mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#14 Warning
+Asynchronous driver check  
+DSP mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#15 Warning
+Asynchronous driver check  
+DSP mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#16 Warning
+Asynchronous driver check  
+DSP mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#17 Warning
+Asynchronous driver check  
+DSP mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#18 Warning
+Asynchronous driver check  
+DSP mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#19 Warning
+Asynchronous driver check  
+DSP mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#20 Warning
+Asynchronous driver check  
+DSP mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#21 Warning
+Asynchronous driver check  
+DSP mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive input pin mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive/C[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[10] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (mfsmd/addr_d_reg_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[10] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (mfsmd/addr_u_reg_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[10] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (mfsmd/dir_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[11] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[11]) which is driven by a register (mfsmd/addr_d_reg_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[11] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[11]) which is driven by a register (mfsmd/addr_u_reg_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[11] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[11]) which is driven by a register (mfsmd/dir_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (mfsmd/addr_d_reg_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (mfsmd/addr_u_reg_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[12] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[12]) which is driven by a register (mfsmd/dir_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[13] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[13]) which is driven by a register (mfsmd/addr_d_reg_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[13] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[13]) which is driven by a register (mfsmd/addr_u_reg_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[13] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[13]) which is driven by a register (mfsmd/dir_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[14] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[14]) which is driven by a register (mfsmd/addr_d_reg_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[14] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[14]) which is driven by a register (mfsmd/addr_u_reg_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[14] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[14]) which is driven by a register (mfsmd/dir_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[15]) which is driven by a register (mfsmd/addr_d_reg_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[15]) which is driven by a register (mfsmd/addr_u_reg_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[15] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[15]) which is driven by a register (mfsmd/dir_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[9] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (mfsmd/addr_d_reg_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B has an input control pin mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/ADDRARDADDR[9] (net: mram/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (mfsmd/addr_u_reg_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+AVAL-5#1 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+mfsmd/cnt_120k/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#2 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+mfsmd/cseg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#3 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+mfsmd/cseg_rec_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#4 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+mfsmd/seg_play_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#5 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+mfsmd/seg_rec_cnt/U0/i_synth/i_baseip.i_xbip_counter/i_dsp48.i_dsp/i_vx7.i_dsp48e_wrap/i_primitive: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+

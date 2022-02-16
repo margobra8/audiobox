@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Jan 27 20:08:47 2022
+# Process ID: 6068
+# Current directory: C:/home/archivos_dsed_lab/dsed_audiobox/dsed_audiobox.runs/impl_1
+# Command line: vivado.exe -log controlador.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source controlador.tcl -notrace
+# Log file: C:/home/archivos_dsed_lab/dsed_audiobox/dsed_audiobox.runs/impl_1/controlador.vdi
+# Journal file: C:/home/archivos_dsed_lab/dsed_audiobox/dsed_audiobox.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source controlador.tcl -notrace
